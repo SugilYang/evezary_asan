@@ -417,11 +417,11 @@
 </footer>
 
 
-<audio id="bgm" loop preload="auto">
+<audio id="bgm" loop autoplay preload="auto">
   <source src="https://incompetech.com/music/royalty-free/mp3-royaltyfree/Heart%20of%20Nowhere.mp3" type="audio/mpeg">
   <source src="https://commons.wikimedia.org/wiki/Special:FilePath/Heart_of_Nowhere_(MacLeod,_Kevin)_(ISRC_USUAN1400045).oga" type="audio/ogg">
 </audio>
-<div class="bgm-hint" id="bgmHint">화면을 한 번 터치하면 음악이 흐릅니다</div>
+<div class="bgm-hint" id="bgmHint">♪ 화면을 움직이면 음악이 흐릅니다</div>
 <button class="bgm" id="bgmBtn" type="button"><span class="disc"></span><span id="bgmTxt">BGM</span></button>
 <script>
 (function(){
@@ -460,16 +460,31 @@
     wanted=true;
     if(useSynth){ synth=synth||makeSynth(); if(synth){synth.start();setUI(true);} return; }
     var p=audio.play();
-    clearTimeout(fallbackTimer); fallbackTimer=setTimeout(function(){ if(wanted&&!playing) fallback(); },6000);
-    if(p&&p.then){ p.then(function(){ if(!useSynth) setUI(true); }).catch(fallback); } else { setUI(true); }
+    if(p&&p.then){
+      p.then(function(){ if(!useSynth){ setUI(true); clearTimeout(fallbackTimer); } })
+       .catch(function(err){
+         if(err&&err.name==='NotAllowedError'){ wanted=false; return; } /* 브라우저가 자동재생 차단 → 첫 조작 때 다시 시도 */
+         fallback();
+       });
+      clearTimeout(fallbackTimer); fallbackTimer=setTimeout(function(){ if(wanted&&!playing) fallback(); },6000);
+    } else { setUI(true); }
   }
   function stop(){ wanted=false; clearTimeout(fallbackTimer); if(useSynth&&synth) synth.stop(); else audio.pause(); setUI(false); }
   audio.addEventListener('error',fallback,true);
   audio.addEventListener('stalled',function(){ if(audio.networkState===3) fallback(); });
 
   btn.addEventListener('click',function(e){ e.stopPropagation(); playing?stop():start(); });
-  function firstTouch(){ document.removeEventListener('touchend',firstTouch); document.removeEventListener('click',firstTouch); if(!playing) start(); }
-  document.addEventListener('touchend',firstTouch); document.addEventListener('click',firstTouch);
+
+  /* 1) 페이지가 열리자마자 시도 (허용되는 브라우저에서는 바로 재생) */
+  var userOff=false;
+  btn.addEventListener('click',function(){ userOff=!playing; });
+  start();
+  /* 2) 차단되면 스크롤·터치·클릭 등 어떤 조작이든 처음 감지되는 순간 재생 */
+  var evs=['touchstart','touchend','pointerdown','scroll','keydown','click','wheel'];
+  function onAny(){ if(playing||userOff){ off(); return; } start(); }
+  function off(){ evs.forEach(function(e){ document.removeEventListener(e,onAny,true); window.removeEventListener(e,onAny,true); }); }
+  evs.forEach(function(e){ document.addEventListener(e,onAny,{capture:true,passive:true}); window.addEventListener(e,onAny,{capture:true,passive:true}); });
+  audio.addEventListener('playing',off);
   setTimeout(function(){hint.classList.add('hide')},6000);
 })();
 </script>
