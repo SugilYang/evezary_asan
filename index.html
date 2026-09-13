@@ -3,423 +3,497 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>김정중 담당님과 백석동 저녁</title>
+<title>추계 단합대회 · 대천해수욕장 1박2일</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Noto+Serif+KR:wght@600;900&display=swap" rel="stylesheet">
 <style>
-  :root{--navy:#14213d;--navy2:#1f2f52;--sky:#3aa0d8;--sun:#f2a541;--red:#d64545;--paper:#f7f4ee;--ink:#1f2933;--mute:#6b7785;--line:#e4dfd6;--white:#fff;--green:#2a9d6f}
+  :root{--navy:#0d2b3e;--navy2:#173f57;--sea:#2a8fb8;--sun:#e8963f;--paper:#faf6ee;--ink:#1f2933;--mute:#6b7785;--line:#e5ded1;--white:#fff;--green:#2a9d6f}
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-  body{font-family:'Noto Sans KR',system-ui,sans-serif;color:var(--ink);background:#e9e4da;line-height:1.75;font-size:16px;word-break:keep-all;overflow-wrap:anywhere}
+  body{font-family:'Noto Sans KR',system-ui,sans-serif;color:var(--ink);background:#e8e2d6;line-height:1.75;font-size:16px;word-break:keep-all;overflow-wrap:anywhere}
   img{display:block;max-width:100%}
   a{color:inherit;text-decoration:none}
   button{font-family:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}
   .serif{font-family:'Noto Serif KR','Noto Sans KR',serif}
   .app{max-width:480px;margin:0 auto;background:var(--paper);min-height:100vh;box-shadow:0 0 40px rgba(0,0,0,.12)}
   .pad{padding:0 20px}
-  section{padding:52px 0}
-  .kicker{color:var(--sky);font-weight:700;font-size:12px;letter-spacing:2px;text-transform:uppercase}
-  h2{font-size:26px;font-weight:900;margin:6px 0 12px;line-height:1.35}
+  section{padding:56px 0}
+  .kicker{color:var(--sea);font-weight:700;font-size:12px;letter-spacing:2px;text-transform:uppercase}
+  h2{font-size:27px;font-weight:900;margin:6px 0 12px;line-height:1.35}
   .lead{color:var(--mute);font-size:15px}
   .white{background:var(--white)}
 
-  .bar{position:sticky;top:0;z-index:20;background:rgba(20,33,61,.94);backdrop-filter:blur(8px);color:#fff}
+  /* top bar */
+  .bar{position:sticky;top:0;z-index:20;background:rgba(13,43,62,.94);backdrop-filter:blur(8px);color:#fff}
   .bar .t{display:flex;justify-content:space-between;align-items:center;height:50px;padding:0 20px;font-weight:900;letter-spacing:.5px}
   .bar .t span{color:var(--sun)}
   .bar nav{display:flex;gap:8px;overflow-x:auto;padding:0 20px 10px;scrollbar-width:none}
   .bar nav::-webkit-scrollbar{display:none}
   .bar nav a{flex:none;font-size:13px;padding:5px 12px;border-radius:999px;background:rgba(255,255,255,.12)}
 
-  .hero{position:relative;min-height:90vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#14213d,#3a5a8c);overflow:hidden}
+  /* hero */
+  .hero{position:relative;min-height:92vh;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#0d2b3e,#2a8fb8);overflow:hidden}
   .hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-  .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(10,18,36,.96) 0%,rgba(10,18,36,.5) 50%,rgba(10,18,36,.15) 100%)}
+  .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(7,22,33,.95) 0%,rgba(7,22,33,.45) 50%,rgba(7,22,33,.1) 100%)}
   .hero .in{position:relative;z-index:2;padding:0 22px 44px}
   .eyebrow{display:inline-block;background:var(--sun);color:var(--navy);font-weight:700;font-size:12px;padding:4px 11px;border-radius:999px;letter-spacing:1px;margin-bottom:14px}
-  .hero h1{font-size:34px;line-height:1.28;font-weight:900;margin-bottom:14px}
-  .hero p{font-size:16px;font-weight:300;opacity:.95}
+  .hero h1{font-size:36px;line-height:1.25;font-weight:900;margin-bottom:14px}
+  .hero p{font-size:16px;font-weight:300;opacity:.95;line-height:1.7}
   .hero .meta{display:grid;grid-template-columns:1fr 1fr;gap:8px 14px;margin-top:22px;font-size:13px;font-weight:500}
   .hero .meta b{color:var(--sun);margin-right:5px}
 
+  /* intro */
   .quote{font-size:21px;line-height:1.55;font-weight:600;color:var(--navy);border-left:4px solid var(--sun);padding-left:16px;margin:22px 0}
   .intro p{margin-bottom:12px;font-size:15px}
+  .glance{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:22px}
+  .glance div{background:var(--paper);border-radius:12px;padding:14px}
+  .glance small{display:block;color:var(--mute);font-size:11px;letter-spacing:1px}
+  .glance strong{display:block;font-size:15px;color:var(--navy);margin-top:3px;line-height:1.4}
 
-  .profile{background:var(--navy);color:#fff;border-radius:18px;padding:22px;margin-top:24px;position:relative;overflow:hidden}
-  .profile::before{content:"VIP";position:absolute;right:-10px;top:-18px;font-size:90px;font-weight:900;color:rgba(255,255,255,.06);letter-spacing:-4px}
-  .profile .who{display:flex;align-items:center;gap:14px}
-  .profile .avatar{width:58px;height:58px;border-radius:50%;background:linear-gradient(135deg,var(--sun),#ff7b54);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:22px;color:var(--navy);flex:none}
-  .profile .name{font-size:22px;font-weight:900}
-  .profile .role{font-size:13px;color:#c9d6e2}
-  .profile .badges{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
-  .profile .badges span{font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;background:rgba(242,165,65,.18);color:var(--sun);border:1px solid rgba(242,165,65,.4)}
-  .profile .stats{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:16px}
-  .profile .stats div{background:rgba(255,255,255,.07);border-radius:10px;padding:10px 12px}
-  .profile .stats small{display:block;font-size:11px;color:#9fb6c9;letter-spacing:1px}
-  .profile .stats b{font-size:15px}
-  .profile p.note{margin-top:14px;font-size:13px;color:#c9d6e2;line-height:1.6}
-
-  .banner{position:relative;min-height:400px;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#1f2f52,#14213d);overflow:hidden}
+  /* photo banner */
+  .banner{position:relative;min-height:420px;display:flex;align-items:flex-end;color:#fff;background:linear-gradient(160deg,#173f57,#0d2b3e);overflow:hidden}
   .banner img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-  .banner::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(10,18,36,.95) 0%,rgba(10,18,36,.5) 55%,rgba(10,18,36,.15) 100%)}
+  .banner::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(7,22,33,.94) 0%,rgba(7,22,33,.5) 55%,rgba(7,22,33,.15) 100%)}
   .banner .in{position:relative;z-index:2;padding:36px 22px}
   .banner .k{color:var(--sun);font-size:12px;letter-spacing:2px;font-weight:700;margin-bottom:10px}
   .banner h3{font-size:26px;line-height:1.4;font-weight:900}
   .banner p{margin-top:12px;font-size:15px;font-weight:300;opacity:.92}
-  .banner.center{align-items:center;text-align:center}
+  .banner.center{align-items:center;text-align:center;min-height:460px}
+  .banner .bubble{display:inline-block;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.35);border-radius:22px 22px 22px 4px;padding:12px 18px;font-size:19px;font-weight:600;margin-top:18px}
 
-  .tl{position:relative;margin-top:22px;padding-left:26px}
-  .tl::before{content:"";position:absolute;left:8px;top:6px;bottom:6px;width:2px;background:var(--line)}
-  .tstep{position:relative;padding-bottom:22px}
-  .tstep::before{content:"";position:absolute;left:-24px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--sun);border:3px solid var(--paper);box-shadow:0 0 0 2px var(--sun)}
-  .tstep .time{font-weight:900;color:var(--navy);font-size:15px}
-  .tstep h4{font-size:17px;font-weight:700;margin:2px 0 4px}
-  .tstep p{font-size:14px;color:#3d4852}
-  .tstep .chip{display:inline-block;font-size:12px;background:var(--white);border:1px solid var(--line);border-radius:999px;padding:2px 10px;margin-top:6px;color:var(--mute)}
-  .tstep.me::before{background:var(--sky);box-shadow:0 0 0 2px var(--sky)}
+  /* ad unit */
+  .ad{display:block;margin:0 20px;border:1px solid #dadce0;border-radius:8px;background:#fff;overflow:hidden;position:relative;font-family:Roboto,'Noto Sans KR',Arial,sans-serif}
+  .ad .badge{position:absolute;top:0;right:0;z-index:3;display:flex;align-items:center;gap:4px;background:rgba(255,255,255,.92);font-size:10px;color:#5f6368;padding:2px 6px;border-radius:0 0 0 6px}
+  .ad .badge i{display:inline-block;width:0;height:0;border-left:8px solid #00aecd;border-top:5px solid transparent;border-bottom:5px solid transparent}
+  .ad .img{position:relative;height:150px;background:#f1f3f4}
+  .ad .img img{width:100%;height:100%;object-fit:cover}
+  .ad .img::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.55),transparent 60%)}
+  .ad .img .tag{position:absolute;left:12px;bottom:10px;z-index:2;background:#d93025;color:#fff;font-weight:900;font-size:13px;padding:3px 9px;border-radius:4px}
+  .ad .body{padding:12px 14px 14px;display:flex;gap:10px;align-items:center}
+  .ad .body>div{flex:1;min-width:0}
+  .ad h5{font-size:16px;color:#202124;font-weight:700;line-height:1.3}
+  .ad p{font-size:13px;color:#5f6368;margin-top:3px;line-height:1.45}
+  .ad small{display:block;font-size:11px;color:#1a73e8;margin-top:4px}
+  .ad .cta{flex:none;background:#1a73e8;color:#fff;font-size:13px;font-weight:700;padding:9px 14px;border-radius:4px}
+  .ad-wrap{padding:10px 0 40px}
+  .ad-wrap .lbl{text-align:center;font-size:11px;color:#9aa0a6;margin-bottom:6px}
 
-  .sketch{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:14px 10px 6px;margin-top:20px}
-  .sketch svg{width:100%;height:auto;display:block}
-  .sketch .cap{font-size:12px;color:var(--mute);text-align:center;padding:6px 0 4px}
-  .legend{display:grid;grid-template-columns:1fr;gap:8px;margin-top:14px}
-  .legend div{display:flex;align-items:center;gap:10px;background:var(--white);border:1px solid var(--line);border-radius:12px;padding:10px 12px;font-size:14px}
-  .legend i{width:26px;height:26px;border-radius:50%;color:#fff;font-style:normal;font-weight:900;display:flex;align-items:center;justify-content:center;flex:none;font-size:13px}
-  .legend b{color:var(--navy)}
-  .legend small{display:block;color:var(--mute);font-size:12px}
-  .legend .d{margin-left:auto;font-weight:900;color:var(--navy);white-space:nowrap;font-size:13px}
+  /* members / move */
+  .members{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:22px 0}
+  .mem{background:var(--white);border:1px solid var(--line);border-radius:12px;padding:14px 12px;text-align:center}
+  .mem .city{font-size:11px;letter-spacing:1px;color:var(--sea);font-weight:700}
+  .mem .name{font-size:19px;font-weight:900;color:var(--navy);margin:2px 0}
+  .mem .dist{font-size:12px;color:var(--mute)}
+  .mem .role{display:inline-block;margin-top:7px;font-size:11px;font-weight:700;padding:2px 9px;border-radius:999px;background:#eee;color:#555}
+  .mem.driver{border-color:var(--sun)}
+  .mem.driver .role{background:#fdeeda;color:#a8641a}
+  .mem.train .role{background:#e2f2f8;color:#1a6f92}
+  .mem:last-child{grid-column:1/-1}
+  .rows{background:var(--white);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  .row{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:12px 14px;border-top:1px solid var(--line);font-size:15px}
+  .row:first-child{border-top:none}
+  .row b{color:var(--navy);white-space:nowrap}
+  .row small{display:block;color:var(--mute);font-size:12px}
+  .plan{background:var(--white);border:1px solid var(--line);border-radius:12px;padding:18px;margin-top:14px}
+  .plan h4{font-size:16px;color:var(--navy);margin-bottom:10px}
+  .plan ol{padding-left:18px;font-size:15px}
+  .plan li{margin-bottom:8px}
+  .plan .why{margin-top:12px;font-size:13px;color:var(--mute);border-top:1px solid var(--line);padding-top:10px}
+  h4.sub{font-size:15px;color:var(--navy);margin:22px 0 8px}
 
-  .rest{background:var(--white);border-radius:18px;overflow:hidden;border:2px solid var(--line);margin-top:20px;box-shadow:0 8px 24px rgba(20,33,61,.08);transition:border-color .2s}
-  .rest.picked{border-color:var(--sun);box-shadow:0 10px 30px rgba(242,165,65,.28)}
-  .galwrap{position:relative}
-  .num{position:absolute;left:14px;top:14px;z-index:3;width:34px;height:34px;border-radius:50%;color:#fff;font-weight:900;display:flex;align-items:center;justify-content:center;font-size:16px;box-shadow:0 4px 12px rgba(0,0,0,.3)}
-  .walk{position:absolute;right:12px;top:12px;z-index:3;background:rgba(20,33,61,.9);color:#fff;font-weight:900;font-size:13px;padding:5px 11px;border-radius:999px;border:1px solid rgba(255,255,255,.25)}
-  .gal{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;background:linear-gradient(135deg,#1f2f52,#3aa0d8)}
-  .gal::-webkit-scrollbar{display:none}
-  .gal figure{flex:none;width:100%;aspect-ratio:4/3;scroll-snap-align:start;position:relative;background:linear-gradient(135deg,#1f2f52,#3a5a8c)}
-  .gal img{width:100%;height:100%;object-fit:cover}
-  .gal figcaption{position:absolute;left:0;right:0;bottom:0;padding:26px 14px 10px;color:#fff;font-size:12px;background:linear-gradient(transparent,rgba(0,0,0,.65))}
-  .dots{position:absolute;bottom:8px;left:0;right:0;display:flex;justify-content:center;gap:5px;z-index:3;pointer-events:none}
-  .dots i{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.55)}
-  .rest .body{padding:16px 18px 18px}
-  .tag{display:inline-block;font-size:11px;font-weight:700;padding:2px 9px;border-radius:999px;margin-right:4px;margin-bottom:8px}
-  .tag.a{background:#fff1dc;color:#b5641a}.tag.b{background:#e3f3fb;color:#1a78ad}.tag.c{background:#e6f4ea;color:#2a7a47}
-  .rest h3{font-size:21px;font-weight:900;margin-bottom:4px;line-height:1.35}
-  .rest .sub{font-size:14px;color:var(--mute);margin-bottom:10px}
-  .rest p.desc{font-size:14px;color:#3d4852;margin-bottom:12px}
-  .addr{display:flex;gap:8px;align-items:flex-start;background:var(--paper);border-radius:10px;padding:10px 12px;font-size:13.5px;line-height:1.5}
-  .addr .pin{flex:none;font-size:16px}
-  .addr b{display:block;color:var(--navy)}
-  .facts{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
-  .facts div{background:var(--paper);border-radius:10px;padding:8px 12px}
-  .facts small{display:block;font-size:11px;color:var(--mute);letter-spacing:1px}
-  .facts b{font-size:14px;color:var(--navy)}
-  .map{margin-top:12px;border-radius:12px;overflow:hidden;border:1px solid var(--line);background:#e9e4da;aspect-ratio:4/3;position:relative}
-  .map iframe{width:100%;height:100%;border:0;display:block;position:relative;z-index:1}
-  .map .fb{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:13px;color:var(--mute)}
-  .links{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
-  .links a{display:flex;align-items:center;justify-content:center;gap:6px;padding:11px;border-radius:10px;font-size:14px;font-weight:700;border:1px solid var(--line);background:var(--white)}
-  .links a.naver{color:#03c75a;border-color:#03c75a}.links a.kakao{color:#8a6d00;background:#fee500;border-color:#fee500}
-  .pick{width:100%;margin-top:12px;padding:15px;border:0;border-radius:12px;background:var(--navy);color:#fff;font-size:16px;font-weight:900}
-  .rest.picked .pick{background:var(--sun);color:var(--navy)}
+  /* play cards */
+  .plays{display:grid;grid-template-columns:1fr;gap:14px;margin-top:22px}
+  .play{background:var(--white);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;align-items:stretch}
+  .play .ph{flex:none;width:120px;background:linear-gradient(135deg,#173f57,#2a8fb8);position:relative}
+  .play .ph img{width:100%;height:100%;object-fit:cover}
+  .play .tx{padding:14px 16px}
+  .play h4{font-size:17px;font-weight:900;color:var(--navy);line-height:1.35}
+  .play p{font-size:13px;color:#3d4852;margin-top:4px}
+  .play .fee{display:inline-block;margin-top:8px;font-size:12px;font-weight:700;background:#fdeeda;color:#a8641a;padding:3px 10px;border-radius:999px}
 
-  .decide{background:var(--navy);color:#fff}
-  .decide .kicker{color:var(--sun)}.decide .lead{color:#c9d6e2}
-  .yn{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px}
-  .yn button{padding:18px 12px;border-radius:14px;border:2px solid rgba(255,255,255,.2);background:rgba(255,255,255,.06);color:#fff;font-size:16px;font-weight:900;line-height:1.3}
-  .yn button small{display:block;font-size:12px;font-weight:400;color:#c9d6e2;margin-top:4px}
-  .yn button.on{background:var(--sun);color:var(--navy);border-color:var(--sun)}
-  .yn button.on small{color:#4a3a14}
-  .hw{display:flex;align-items:center;gap:12px;background:var(--navy2);border-radius:14px;padding:14px;margin-top:20px}
-  .hw .av{width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,#3aa0d8,#8fd3ff);display:flex;align-items:center;justify-content:center;font-weight:900;color:var(--navy);flex:none;font-size:18px}
-  .hw b{font-size:17px}.hw small{display:block;color:#c9d6e2;font-size:13px}
-  .result{margin-top:22px;background:var(--navy2);border-radius:16px;padding:18px}
-  .result h4{font-size:13px;color:#9fb6c9;letter-spacing:1px;margin-bottom:8px}
-  .result .line{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-top:1px solid rgba(255,255,255,.12);font-size:15px}
-  .result .line:first-of-type{border-top:none}
-  .result .line b{color:var(--sun);text-align:right}
-  .send{width:100%;margin-top:14px;padding:16px;border:0;border-radius:12px;background:#fee500;color:#3c1e1e;font-size:16px;font-weight:900}
-  .send:disabled{background:rgba(255,255,255,.12);color:#8ea3b5}
-  .sent{margin-top:10px;font-size:13px;color:#c9d6e2;text-align:center;min-height:20px}
+  /* stops */
+  .day-head{margin-bottom:22px}
+  .day-head .badge{display:inline-block;background:var(--navy);color:#fff;font-weight:900;font-size:16px;padding:3px 14px;border-radius:8px;margin-bottom:8px}
+  .day-head p{color:var(--mute);font-size:14px}
+  .stop{background:var(--white);border-radius:16px;overflow:hidden;border:1px solid var(--line);margin-bottom:18px;box-shadow:0 8px 24px rgba(13,43,62,.07)}
+  .stop .photo{position:relative;aspect-ratio:4/3;background:linear-gradient(135deg,#173f57,#2a8fb8)}
+  .stop .photo img{width:100%;height:100%;object-fit:cover}
+  .stop .photo::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(7,22,33,.75),transparent 55%)}
+  .stop .photo .time{position:absolute;left:14px;top:14px;z-index:2;background:rgba(13,43,62,.88);color:#fff;font-weight:900;font-size:15px;padding:4px 10px;border-radius:8px}
+  .stop .photo .cap{position:absolute;left:14px;right:14px;bottom:12px;z-index:2;color:#fff;font-size:13px}
+  .stop .body{padding:16px 18px 18px}
+  .tag{display:inline-block;font-size:11px;font-weight:700;padding:2px 9px;border-radius:999px;margin-bottom:6px;margin-right:4px}
+  .tag.leisure{background:#e2f2f8;color:#1a6f92}.tag.food{background:#fdeeda;color:#a8641a}.tag.nature{background:#e6f4ea;color:#2a7a47}.tag.stay{background:#efe9fb;color:#6541a8}.tag.move{background:#eee;color:#555}
+  .stop h3{font-size:19px;font-weight:700;margin-bottom:6px;line-height:1.4}
+  .stop p{color:#3d4852;font-size:14px}
+  .stop .addr{margin-top:10px;background:var(--paper);border-radius:10px;padding:9px 12px;font-size:13px;line-height:1.5}
+  .stop .addr b{color:var(--navy)}
+  .stop .fee{margin-top:8px;font-weight:700;color:var(--navy);font-size:14px}
+  .stop .fee span{display:block;font-weight:400;color:var(--mute);font-size:12px}
 
+  /* sayings */
   .say{padding:18px 0;border-top:1px solid var(--line);font-size:17px;line-height:1.6;color:var(--navy);font-weight:600}
   .say:first-of-type{border-top:none}
   .say small{display:block;font-size:12px;color:var(--mute);font-weight:400;margin-top:4px}
 
-  footer{background:#0a1224;color:#8ea3b5;font-size:11px;padding:22px 20px 40px;line-height:1.7}
+  /* card */
+  .card{background:var(--white);border-radius:14px;padding:18px;border:1px solid var(--line);margin-top:12px}
+  .card .ic{font-size:24px;margin-bottom:4px}
+  .card h4{font-size:16px;margin-bottom:6px;color:var(--navy)}
+  .card ul{padding-left:18px;font-size:14px;color:#3d4852}
+
+  /* bgm */
+  .bgm{position:fixed;right:16px;bottom:18px;z-index:50;display:flex;align-items:center;gap:8px;background:var(--navy);color:#fff;border:2px solid var(--sun);border-radius:999px;padding:8px 14px 8px 10px;font-size:13px;font-weight:700;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+  .bgm .disc{width:22px;height:22px;border-radius:50%;background:radial-gradient(circle,var(--sun) 0 3px,#0d2b3e 4px 6px,#2a8fb8 7px);animation:spin 3s linear infinite;animation-play-state:paused}
+  .bgm.on .disc{animation-play-state:running}
+  .bgm.on::before{content:"";position:absolute;inset:-6px;border-radius:999px;border:2px solid var(--sun);opacity:.6;animation:pulse 1.6s ease-out infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  @keyframes pulse{from{transform:scale(1);opacity:.6}to{transform:scale(1.25);opacity:0}}
+  .bgm-hint{position:fixed;right:16px;bottom:66px;z-index:50;background:rgba(13,43,62,.92);color:#fff;font-size:12px;padding:6px 10px;border-radius:8px;transition:opacity .4s}
+  .bgm-hint.hide{opacity:0;pointer-events:none}
+
+  footer{background:#07161f;color:#8ea3b5;font-size:11px;padding:22px 20px 40px;line-height:1.7}
 </style>
 </head>
 <body>
 <div class="app">
 
 <div class="bar">
-  <div class="t"><div>백석동 <span>저녁 한잔</span></div><div style="font-size:12px;font-weight:500;opacity:.8">2026.09.10 THU</div></div>
-  <nav><a href="#intro">인사</a><a href="#plan">동선</a><a href="#map">약도</a><a href="#pick">식당 고르기</a><a href="#decide">동행</a></nav>
+  <div class="t"><div>추계 <span>단합대회</span></div><div style="font-size:12px;font-weight:500;opacity:.8">10.24 ~ 10.25</div></div>
+  <nav><a href="#intro">소개</a><a href="#move">이동</a><a href="#play">놀거리</a><a href="#day1">1일차</a><a href="#day2">2일차</a><a href="#tips">준비물</a></nav>
 </div>
 
 <header class="hero">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Soju_in_korean_restaurant.JPG?width=1200" alt="" onerror="this.remove()">
+  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Korea-Boryeong-Daecheon_Beach-01.jpg?width=1200" alt="대천해수욕장" onerror="this.remove()">
   <div class="in">
-    <span class="eyebrow">INVITATION · 퇴근 후 · 소주 한잔</span>
-    <h1 class="serif">김정중 담당님,<br>오늘 저녁은<br>백석동에서</h1>
-    <p>회사에서 만난 인연이 회사 밖에서 진짜가 되는 저녁. 조용하게, 대화가 되는 곳으로 세 군데 골랐습니다. 담당님이 한 곳만 찍어주세요.</p>
+    <span class="eyebrow">2026 추계 단합대회 · 5 MEN</span>
+    <h1 class="serif">가을 바다에서<br>다시 뭉친다</h1>
+    <p>여름이 지나간 대천해수욕장은 우리 것입니다. 바다 위를 날고, 조개를 굽고, 파도 소리 들으며 잔을 부딪치는 하루 반. 사람 없는 가을 바다가 제일 좋습니다.</p>
     <div class="meta">
-      <div><b>언제</b>오늘 퇴근 후</div>
-      <div><b>어디</b>백석푸르지오 앞</div>
-      <div><b>누구</b>양수길 + 김정중</div>
-      <div><b>귀가</b>담당님 도보 · 저는 대리</div>
+      <div><b>일시</b>10월 24일(토) ~ 25일(일)</div>
+      <div><b>장소</b>충남 보령 대천해수욕장</div>
+      <div><b>인원</b>5명</div>
+      <div><b>집결</b>24일 10:00 · 해산 25일 14:00</div>
     </div>
   </div>
 </header>
 
 <section id="intro" class="intro white pad">
-  <span class="kicker">From 양수길</span>
-  <h2>회사에서 만났지만,<br>좋은 인연이 될 겁니다</h2>
-  <p class="quote serif">"같은 회사에서 일하는 사람은 많지만, 퇴근 후에 같이 소주잔 기울이는 사람은 몇 없습니다."</p>
-  <p>재무팀 BM 김정중 담당님. 회의실에서만 뵙기엔 아까운 분이라 오늘 저녁 자리를 잡았습니다. 담당님 집 앞 백석동에서, 걸어서 10분 안쪽 식당으로만 골랐으니 부담은 내려놓으셔도 됩니다.</p>
-  <p>참고로 저는 알아두시면 여러모로 쓸모 있는 사람입니다. 아래 프로필을 봐주세요.</p>
-
-  <div class="profile">
-    <div class="who">
-      <div class="avatar">양</div>
-      <div><div class="name">양수길</div><div class="role">회사의 핵심인재 · 공식 인싸 · 오늘의 호스트</div></div>
-    </div>
-    <div class="badges"><span>핵심인재</span><span>사내 인맥 허브</span><span>회식 출석률 100%</span><span>대리운전 앱 VIP</span></div>
-    <div class="stats">
-      <div><small>사내 인맥</small><b>★★★★★</b></div>
-      <div><small>정보력</small><b>부서 불문</b></div>
-      <div><small>술자리 매너</small><b>잔 안 비우게 함</b></div>
-      <div><small>귀가 방식</small><b>대리운전 (배방)</b></div>
-    </div>
-    <p class="note">잘 알아두시면 회사 생활이 편해집니다.</p>
+  <span class="kicker">About</span>
+  <h2>단양이 대천으로,<br>봄이 가을로</h2>
+  <p class="quote serif">"여름 바다는 남의 것이고,<br>가을 바다는 우리 것이다."</p>
+  <p>원래 단양으로 계획했던 모임이 추계 단합대회로 바뀌어 서해로 나갑니다. 산 대신 바다, 강바람 대신 갯바람. 10월 말의 대천은 사람이 빠지고 하늘이 높아져서, 다섯 명이 마음껏 떠들어도 아무도 신경 쓰지 않습니다.</p>
+  <p>이번에도 리듬은 같습니다. 오전엔 몸을 쓰고, 낮엔 서해 회를 먹고, 오후엔 바다를 걷고, 밤엔 조개 구우며 옛날 얘기를 꺼내는 것. 딱 그만큼이면 충분합니다.</p>
+  <div class="glance">
+    <div><small>DAY 1 · 레저</small><strong>짚트랙 · 해상 스카이바이크</strong></div>
+    <div><small>DAY 1 · 맛</small><strong>대천항 회 · 조개구이 무한리필</strong></div>
+    <div><small>DAY 1 · 자연</small><strong>죽도 상화원 · 해변 노을</strong></div>
+    <div><small>DAY 2 · 맛</small><strong>우럭젓국 · 바지락칼국수</strong></div>
+    <div><small>이동</small><strong>익산 차 1대 + 아산 차 1대</strong></div>
+    <div><small>숙소</small><strong>대천 오션뷰 펜션 (바베큐 데크)</strong></div>
   </div>
 </section>
 
 <div class="banner">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Korean_barbeque-Ogyeopsal-01.jpg?width=1000" alt="" loading="lazy" onerror="this.remove()">
+  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Daecheon_Beach_-_panoramio.jpg?width=1000" alt="대천해수욕장" loading="lazy" onerror="this.remove()">
   <div class="in">
-    <div class="k">TONIGHT</div>
-    <h3 class="serif">고기든 국물이든,<br>담당님이 고르는 대로.</h3>
-    <p>아래 세 곳 중 한 곳을 누르면 결정 끝. 예약은 제가 합니다.</p>
+    <div class="k">OUR WAY</div>
+    <h3 class="serif">개인은 개인끼리,<br>가족은 가족끼리.<br>하지만 우리는,<br>친구는 친구끼리.</h3>
+    <p>각자의 집, 각자의 회사, 각자의 아이들. 그래도 1년에 하루 반은 우리끼리.</p>
   </div>
 </div>
 
-<section id="plan" class="pad">
-  <span class="kicker">Tonight's route</span>
-  <h2>오늘 동선</h2>
-  <p class="lead">회사에서 각자 차로 출발해 담당님 댁에 차를 두고, 제 차로 식당까지. 저는 마지막에 대리 불러서 배방으로 갑니다.</p>
+<div class="ad-wrap white">
+  <div class="lbl">광고</div>
+  <a class="ad" href="#" onclick="return false">
+    <div class="badge"><i></i>광고 ⓘ</div>
+    <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Lego_Color_Bricks.jpg?width=800" alt="" loading="lazy" onerror="this.remove()"><span class="tag">폐업 정리</span></div>
+    <div class="body"><div><h5>안산 장난감 폐업매장</h5><p>점포 정리 마지막 기회 · 전 품목 최대 90% · 재고 소진 시 종료</p><small>ansan-toy-sale.kr</small></div><span class="cta">지금 보기</span></div>
+  </a>
+</div>
 
-  <div class="tl">
-    <div class="tstep"><div class="time">18:00</div><h4>퇴근 · 회사 출발</h4><p>아산시 음봉면 스마트산단로 91. 각자 차로 백석동으로 이동합니다.</p><span class="chip">회사 → 백석동 약 13km · 25분 안팎</span></div>
-    <div class="tstep"><div class="time">18:30</div><h4>백석푸르지오 도착 · 담당님 주차</h4><p>천안시 서북구 한들2로 88. 담당님은 집에 차를 대고 나오시면 됩니다. 저는 단지 앞에서 기다립니다.</p></div>
-    <div class="tstep me"><div class="time">18:35</div><h4>양수길 차로 식당 이동</h4><p>세 곳 모두 아파트에서 걸어서 4~9분 거리라 제 차로 가면 2분, 걸어가도 됩니다. 담당님 편하신 대로.</p></div>
-    <div class="tstep"><div class="time">19:00</div><h4>저녁 + 소주</h4><p>담당님이 고른 식당에서. 회사 얘기는 안주 나올 때까지만, 그 다음은 사는 얘기.</p></div>
-    <div class="tstep"><div class="time">21:30~</div><h4>마무리</h4><p>담당님은 집까지 걸어서 5분. 저는 대리운전 불러서 배방 우방아이유쉘로 갑니다.</p><span class="chip">백석동 → 배방 약 10km</span></div>
+<section id="move" class="pad">
+  <span class="kicker">Getting there</span>
+  <h2>익산에서 셋,<br>천안아산역에서 둘</h2>
+  <p class="lead">차는 두 대. 익산 셋은 한 차로, 여수 안성열은 KTX로 천안아산역까지 와서 양수길 차에 합류합니다. 가장 먼 사람의 운전을 없애는 쪽으로 짰습니다.</p>
+
+  <div class="members">
+    <div class="mem driver"><div class="city">익산</div><div class="name">방동혁</div><div class="dist">대천까지 약 105km</div><span class="role">익산 차 운전</span></div>
+    <div class="mem"><div class="city">익산</div><div class="name">오성민</div><div class="dist">대천까지 약 105km</div><span class="role">익산 차 동승</span></div>
+    <div class="mem"><div class="city">익산</div><div class="name">윤길준</div><div class="dist">대천까지 약 105km</div><span class="role">익산 차 동승</span></div>
+    <div class="mem train"><div class="city">여수</div><div class="name">안성열</div><div class="dist">KTX 약 2시간 20분</div><span class="role">천안아산역에서 합류</span></div>
+    <div class="mem driver"><div class="city">아산</div><div class="name">양수길</div><div class="dist">대천까지 약 115km</div><span class="role">아산 차 운전 · 안성열 픽업</span></div>
+  </div>
+
+  <h4 class="sub">거리 · 소요시간</h4>
+  <div class="rows">
+    <div class="row"><span>익산 → 대천해수욕장 <small>자차 · 약 105km</small></span><b>약 1시간 30분</b></div>
+    <div class="row"><span>여수엑스포역 → 천안아산역 <small>KTX</small></span><b>약 2시간 20분</b></div>
+    <div class="row"><span>배방 → 천안아산역 <small>자차 · 약 4km</small></span><b>약 10분</b></div>
+    <div class="row"><span>천안아산역 → 대천해수욕장 <small>자차 · 약 115km</small></span><b>약 1시간 40분</b></div>
+    <div class="row"><span>(참고) 여수 → 대천 자차 <small>약 260km</small></span><b>약 3시간 20분</b></div>
+  </div>
+
+  <div class="plan">
+    <h4>추천안 · 차 2대 + KTX 1명</h4>
+    <ol>
+      <li><b>안성열</b> 여수엑스포역 첫차 KTX → 천안아산역 08:00 전후 도착</li>
+      <li><b>양수길</b> 배방에서 10분, 천안아산역에서 안성열 픽업 후 <b>08:15 출발</b></li>
+      <li><b>방동혁</b> 차로 오성민·윤길준과 함께 익산 <b>08:30 출발</b> (3명)</li>
+      <li>두 차 모두 <b>10:00 대천해수욕장 주차장</b>에서 만남</li>
+      <li>돌아올 땐 역순. 천안아산역에서 안성열 KTX 환승</li>
+    </ol>
+    <p class="why">운전이 익산 1시간 30분, 아산 1시간 40분으로 고르게 나뉘고, 가장 먼 여수는 기차에서 자고 옵니다. 익산 차가 3명이라 톨게이트·기름값 효율도 가장 좋습니다. 거리와 시간은 지도 앱 통상치이니 출발 전 네이버지도로 다시 확인하세요.</p>
   </div>
 </section>
 
-<section id="map" class="white pad">
-  <span class="kicker">Map</span>
-  <h2>백석푸르지오에서 얼마나 가까운가</h2>
-  <p class="lead">담당님 댁(한들2로 88)을 가운데 두고 세 곳의 위치와 도보 거리를 약도로 그렸습니다. 거리는 도로명 번호 기준 추정치이고, 정확한 길은 각 식당의 지도 버튼으로 확인하세요.</p>
-
-  <div class="sketch">
-    <svg viewBox="0 0 440 300" xmlns="http://www.w3.org/2000/svg" font-family="Noto Sans KR, sans-serif">
-      <rect x="20" y="120" width="400" height="26" rx="13" fill="#e9e4da"/>
-      <text x="30" y="137" font-size="11" fill="#9aa4ae">한들2로</text>
-      <rect x="20" y="220" width="400" height="26" rx="13" fill="#e9e4da"/>
-      <text x="30" y="237" font-size="11" fill="#9aa4ae">한들3로</text>
-      <rect x="330" y="110" width="22" height="146" rx="11" fill="#e9e4da"/>
-      <rect x="150" y="110" width="22" height="146" rx="11" fill="#e9e4da"/>
-      <path d="M380 133 L268 133" stroke="#f2a541" stroke-width="3" stroke-dasharray="6 5" fill="none"/>
-      <path d="M268 133 L120 133" stroke="#f2a541" stroke-width="3" stroke-dasharray="6 5" fill="none"/>
-      <path d="M380 133 L341 133 L341 233 L200 233" stroke="#f2a541" stroke-width="3" stroke-dasharray="6 5" fill="none"/>
-      <g transform="translate(380,133)">
-        <circle r="28" fill="#14213d"/>
-        <circle r="34" fill="none" stroke="#14213d" stroke-width="2" stroke-dasharray="3 4"/>
-        <text y="-3" text-anchor="middle" font-size="12" fill="#fff" font-weight="900">푸르지오</text>
-        <text y="12" text-anchor="middle" font-size="10" fill="#f2a541">한들2로 88</text>
-      </g>
-      <text x="380" y="88" text-anchor="middle" font-size="12" fill="#14213d" font-weight="700">🏠 담당님 댁</text>
-      <g transform="translate(268,133)">
-        <circle r="20" fill="#2a9d6f"/><text y="6" text-anchor="middle" font-size="16" fill="#fff" font-weight="900">3</text>
-      </g>
-      <text x="268" y="98" text-anchor="middle" font-size="12" fill="#14213d" font-weight="700">누리마을감자탕</text>
-      <text x="268" y="170" text-anchor="middle" font-size="11" fill="#2a9d6f" font-weight="900">약 260m · 도보 4분</text>
-      <g transform="translate(120,133)">
-        <circle r="20" fill="#d64545"/><text y="6" text-anchor="middle" font-size="16" fill="#fff" font-weight="900">1</text>
-      </g>
-      <text x="120" y="98" text-anchor="middle" font-size="12" fill="#14213d" font-weight="700">천왕봉흑돈</text>
-      <text x="120" y="170" text-anchor="middle" font-size="11" fill="#d64545" font-weight="900">약 540m · 도보 8분</text>
-      <g transform="translate(200,233)">
-        <circle r="20" fill="#3aa0d8"/><text y="6" text-anchor="middle" font-size="16" fill="#fff" font-weight="900">2</text>
-      </g>
-      <text x="200" y="272" text-anchor="middle" font-size="12" fill="#14213d" font-weight="700">마포깡통숯불구이 (백석3차 아이파크)</text>
-      <text x="200" y="288" text-anchor="middle" font-size="11" fill="#3aa0d8" font-weight="900">약 600m · 도보 9분</text>
-      <text x="405" y="30" text-anchor="middle" font-size="11" fill="#9aa4ae">약도 · 축척 무시</text>
-    </svg>
-    <div class="cap">점선은 걸어가는 길의 방향만 표시한 것입니다.</div>
-  </div>
-
-  <div class="legend">
-    <div><i style="background:#d64545">1</i><div><b>천왕봉흑돈 백석점</b><small>한들2로 34-5 · 오겹살·생고기</small></div><span class="d">도보 8분</span></div>
-    <div><i style="background:#3aa0d8">2</i><div><b>마포깡통숯불구이</b><small>한들3로 36-17 · 숯불구이</small></div><span class="d">도보 9분</span></div>
-    <div><i style="background:#2a9d6f">3</i><div><b>누리마을감자탕 백석점</b><small>한들2로 62 1층 · 감자탕·뼈해장국</small></div><span class="d">도보 4분</span></div>
-  </div>
-</section>
-
-<section id="pick" class="pad">
-  <span class="kicker">Pick one</span>
-  <h2>세 곳 중 한 곳만 눌러주세요</h2>
-  <p class="lead">사진은 옆으로 넘겨보세요. 지도 버튼을 누르면 길찾기까지 바로 됩니다.</p>
-
-  <div class="rest" data-id="1" data-name="천왕봉흑돈 백석점">
-    <div class="galwrap">
-      <span class="num" style="background:#d64545">1</span>
-      <span class="walk">🚶 도보 8분</span>
-      <div class="gal">
-        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Korean_barbeque-Ogyeopsal-01.jpg?width=900" alt="" loading="lazy" onerror="this.remove()"><figcaption>두툼한 오겹살 (참고 이미지)</figcaption></figure>
-        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Korean.cuisine-Samgyeopsal-01.jpg?width=900" alt="" loading="lazy" onerror="this.remove()"><figcaption>불판 위 생고기 (참고 이미지)</figcaption></figure>
-        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Korean_drink-Soju-01.jpg?width=900" alt="" loading="lazy" onerror="this.remove()"><figcaption>고기엔 소주 (참고 이미지)</figcaption></figure>
-      </div>
-      <div class="dots"><i></i><i></i><i></i></div>
+<section id="play" class="white pad">
+  <span class="kicker">Things to do</span>
+  <h2>가을 대천, 놀거리</h2>
+  <p class="lead">바다 위를 나는 것 두 개, 바다를 보는 것 두 개. 짚트랙과 스카이바이크는 월요일 휴무라 토요일이 딱 좋습니다.</p>
+  <div class="plays">
+    <div class="play">
+      <div class="ph"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Zipline.JPG?width=500" alt="" loading="lazy" onerror="this.remove()"></div>
+      <div class="tx"><h4>대천 짚트랙</h4><p>높이 52m, 20층 건물에서 출발해 바다 위 613m를 활공합니다. 이번 여행의 하이라이트.</p><span class="fee">1인 18,000원 · 09:00~18:00</span></div>
     </div>
-    <div class="body">
-      <span class="tag a">고기</span><span class="tag b">깔끔한 분위기</span><span class="tag c">주차 가능</span>
-      <h3>천왕봉흑돈 백석점</h3>
-      <div class="sub">국내산 생고기 · 오겹살 전문</div>
-      <p class="desc">리모델링한 깔끔한 매장에 국내산 생고기만 씁니다. 입에서 녹는 오겹살에 소주 한 병. 정석으로 가고 싶은 날.</p>
-      <div class="addr"><span class="pin">📍</span><div><b>충남 천안시 서북구 한들2로 34-5</b>백석푸르지오에서 한들2로 따라 직진, 약 540m</div></div>
-      <div class="facts"><div><small>메뉴</small><b>오겹살 · 생고기</b></div><div><small>분위기</small><b>모던 · 조용</b></div></div>
-      <div class="map"><div class="fb">지도 불러오는 중</div><iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=%EC%B6%A9%EB%82%A8+%EC%B2%9C%EC%95%88%EC%8B%9C+%EC%84%9C%EB%B6%81%EA%B5%AC+%ED%95%9C%EB%93%A42%EB%A1%9C+34-5&z=16&hl=ko&output=embed"></iframe></div>
-      <div class="links"><a class="naver" href="https://map.naver.com/p/search/%EC%B2%9C%EC%99%95%EB%B4%89%ED%9D%91%EB%8F%88%20%EB%B0%B1%EC%84%9D%EC%A0%90" target="_blank" rel="noopener">네이버지도</a><a class="kakao" href="https://map.kakao.com/link/search/%EC%B2%9C%EC%99%95%EB%B4%89%ED%9D%91%EB%8F%88%20%EB%B0%B1%EC%84%9D%EC%A0%90" target="_blank" rel="noopener">카카오맵</a></div>
-      <button class="pick" type="button">이 집으로 갈게요</button>
+    <div class="play">
+      <div class="ph"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Schienenfahrrad.JPG?width=500" alt="" loading="lazy" onerror="this.remove()"></div>
+      <div class="tx"><h4>대천 스카이바이크</h4><p>국내 최초 해상 스카이바이크. 대천항까지 2.3km 왕복 코스를 페달 밟으며 서해를 봅니다.</p><span class="fee">2인 22,000원 · 4인 30,000원</span></div>
     </div>
-  </div>
-
-  <div class="rest" data-id="2" data-name="마포깡통숯불구이">
-    <div class="galwrap">
-      <span class="num" style="background:#3aa0d8">2</span>
-      <span class="walk">🚶 도보 9분</span>
-      <div class="gal">
-        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Yeomtong-kkochi_and_yangnyeom-dwaeji-galbi.jpg?width=900" alt="" loading="lazy" onerror="this.remove()"><figcaption>숯불 양념구이 (참고 이미지)</figcaption></figure>
-        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Korea-Gyeongju-Galbi-01.jpg?width=900" alt="" loading="lazy" onerror="this.remove()"><figcaption>불향 입은 갈비 (참고 이미지)</figcaption></figure>
-        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Gfp-korean-bbq.jpg?width=900" alt="" loading="lazy" onerror="this.remove()"><figcaption>숯불 위에서 (참고 이미지)</figcaption></figure>
-      </div>
-      <div class="dots"><i></i><i></i><i></i></div>
+    <div class="play">
+      <div class="ph"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Hyangwonjeong_Pavilion.jpg?width=500" alt="" loading="lazy" onerror="this.remove()"></div>
+      <div class="tx"><h4>죽도 상화원</h4><p>섬 전체가 정원. 2km 회랑과 33개 연못을 걷습니다. 금·토·일만 개방하니 토요일에 갑니다.</p><span class="fee">1인 7,000원 · 09:00~18:00</span></div>
     </div>
-    <div class="body">
-      <span class="tag a">숯불구이</span><span class="tag b">불향 · 옛날 감성</span>
-      <h3>마포깡통숯불구이</h3>
-      <div class="sub">깡통 숯불에 굽는 구이 · 소주가 제일 잘 어울리는 집</div>
-      <p class="desc">숯불 연기 속에서 소주 한잔. 격식 없이 편하게 이야기하기엔 이런 집이 최고입니다. 옷에 냄새 배는 건 감수.</p>
-      <div class="addr"><span class="pin">📍</span><div><b>충남 천안시 서북구 한들3로 36-17</b>천안백석3차 아이파크 상가 · 푸르지오에서 약 600m</div></div>
-      <div class="facts"><div><small>메뉴</small><b>숯불 구이</b></div><div><small>분위기</small><b>왁자지껄 · 편함</b></div></div>
-      <div class="map"><div class="fb">지도 불러오는 중</div><iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=%EC%B6%A9%EB%82%A8+%EC%B2%9C%EC%95%88%EC%8B%9C+%EC%84%9C%EB%B6%81%EA%B5%AC+%ED%95%9C%EB%93%A43%EB%A1%9C+36-17&z=16&hl=ko&output=embed"></iframe></div>
-      <div class="links"><a class="naver" href="https://map.naver.com/p/search/%EB%A7%88%ED%8F%AC%EA%B9%A1%ED%86%B5%EC%88%AF%EB%B6%88%EA%B5%AC%EC%9D%B4%20%EC%B2%9C%EC%95%88" target="_blank" rel="noopener">네이버지도</a><a class="kakao" href="https://map.kakao.com/link/search/%EB%A7%88%ED%8F%AC%EA%B9%A1%ED%86%B5%EC%88%AF%EB%B6%88%EA%B5%AC%EC%9D%B4%20%EC%B2%9C%EC%95%88" target="_blank" rel="noopener">카카오맵</a></div>
-      <button class="pick" type="button">이 집으로 갈게요</button>
-    </div>
-  </div>
-
-  <div class="rest" data-id="3" data-name="누리마을감자탕 백석점">
-    <div class="galwrap">
-      <span class="num" style="background:#2a9d6f">3</span>
-      <span class="walk">🚶 도보 4분</span>
-      <div class="gal">
-        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Gamja-tang_with_ramyeon-sari.jpg?width=900" alt="" loading="lazy" onerror="this.remove()"><figcaption>감자탕에 라면사리 (참고 이미지)</figcaption></figure>
-        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Gamja-tang_1.jpg?width=900" alt="" loading="lazy" onerror="this.remove()"><figcaption>뼈에 붙은 살이 포인트 (참고 이미지)</figcaption></figure>
-        <figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Soju.jpg?width=900" alt="" loading="lazy" onerror="this.remove()"><figcaption>국물엔 역시 (참고 이미지)</figcaption></figure>
-      </div>
-      <div class="dots"><i></i><i></i><i></i></div>
-    </div>
-    <div class="body">
-      <span class="tag a">국물</span><span class="tag c">가장 가까움</span><span class="tag b">가성비</span>
-      <h3>누리마을감자탕 백석점</h3>
-      <div class="sub">감자탕 · 뼈해장국 · 푸르지오에서 제일 가까운 집</div>
-      <p class="desc">뜨끈한 감자탕 하나 놓고 천천히 오래 앉아 있기 좋은 집. 내일 아침까지 생각한 선택입니다.</p>
-      <div class="addr"><span class="pin">📍</span><div><b>충남 천안시 서북구 한들2로 62 1층</b>푸르지오에서 한들2로 따라 약 260m, 걸어서 4분</div></div>
-      <div class="facts"><div><small>메뉴</small><b>감자탕 · 뼈해장국</b></div><div><small>분위기</small><b>편안 · 동네</b></div></div>
-      <div class="map"><div class="fb">지도 불러오는 중</div><iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=%EC%B6%A9%EB%82%A8+%EC%B2%9C%EC%95%88%EC%8B%9C+%EC%84%9C%EB%B6%81%EA%B5%AC+%ED%95%9C%EB%93%A42%EB%A1%9C+62&z=16&hl=ko&output=embed"></iframe></div>
-      <div class="links"><a class="naver" href="https://map.naver.com/p/search/%EB%88%84%EB%A6%AC%EB%A7%88%EC%9D%84%EA%B0%90%EC%9E%90%ED%83%95%20%EB%B0%B1%EC%84%9D%EC%A0%90" target="_blank" rel="noopener">네이버지도</a><a class="kakao" href="https://map.kakao.com/link/search/%EB%88%84%EB%A6%AC%EB%A7%88%EC%9D%84%EA%B0%90%EC%9E%90%ED%83%95%20%EB%B0%B1%EC%84%9D%EC%A0%90" target="_blank" rel="noopener">카카오맵</a></div>
-      <button class="pick" type="button">이 집으로 갈게요</button>
+    <div class="play">
+      <div class="ph"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Korea-Boreyong-Daecheon_Beach-06.jpg?width=500" alt="" loading="lazy" onerror="this.remove()"></div>
+      <div class="tx"><h4>해변 조각공원 · 노을</h4><p>전국 해수욕장 최초의 조각공원. 서해라 노을이 바다로 떨어집니다. 단체 사진은 여기서.</p><span class="fee">무료 · 일몰 17:40 전후</span></div>
     </div>
   </div>
 </section>
 
-<section id="decide" class="decide pad">
-  <span class="kicker">One more thing</span>
-  <h2>황인우 님도 같이 갈까요?</h2>
-  <p class="lead">둘이서도 좋고, 셋이면 더 시끄럽습니다. 담당님이 정해주세요.</p>
-
-  <div class="hw"><div class="av">황</div><div><b>황인우</b><small>같이 가면 좋을 사람 · 술은 적당히, 말은 재밌게</small></div></div>
-
-  <div class="yn">
-    <button type="button" data-hw="ok">오케이, 같이 가요<small>셋이서 한잔</small></button>
-    <button type="button" data-hw="no">오늘은 둘이서<small>조용히 얘기하죠</small></button>
+<section id="day1" class="pad">
+  <div class="day-head">
+    <span class="badge">DAY 1 · 10/24 토</span>
+    <h2>바다 위를 나는 첫날</h2>
+    <p>집결 → 짚트랙 → 스카이바이크 → 회 → 상화원 → 노을 → 조개구이</p>
   </div>
 
-  <div class="result">
-    <h4>담당님의 선택</h4>
-    <div class="line"><span>식당</span><b id="rPick">아직 안 골랐어요</b></div>
-    <div class="line"><span>황인우 동행</span><b id="rHw">미정</b></div>
-    <button class="send" id="sendBtn" type="button" disabled>양수길에게 카톡으로 보내기</button>
-    <div class="sent" id="sentMsg">식당과 동행 여부를 고르면 버튼이 켜집니다.</div>
+  <div class="stop">
+    <div class="photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Korea-Boryeong-Daecheon_Beach-01.jpg?width=900" alt="" loading="lazy" onerror="this.remove()"><span class="time">10:00</span><span class="cap">3.5km 백사장, 대천해수욕장</span></div>
+    <div class="body"><span class="tag move">MEET</span><h3>대천해수욕장 주차장 집결</h3><p>익산 차와 아산 차가 여기서 만납니다. 커피 한 잔 들고 바다 한번 보고 출발. 늦는 사람이 첫날 저녁 술값 냅니다.</p><div class="addr"><b>충남 보령시 신흑동 대천해수욕장</b>공영주차장 · 비수기 주차 여유</div></div>
+  </div>
+
+  <div class="stop">
+    <div class="photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Zipline.JPG?width=900" alt="" loading="lazy" onerror="this.remove()"><span class="time">10:30 – 11:20</span><span class="cap">바다 위 613m 활공 (참고 이미지)</span></div>
+    <div class="body"><span class="tag leisure">LEISURE</span><h3>대천 짚트랙</h3><p>해발 52m 타워에서 출발해 바다 위 613m를 한 번에 내려옵니다. 순서는 가위바위보. 가장 먼저 타는 사람이 나머지 넷을 찍어줍니다.</p><div class="addr"><b>충남 보령시 해수욕장10길 79</b>비수기 09:00~18:00 · 041-934-3003</div><p class="fee">1인 18,000원<span>기상에 따라 운영 여부 변동, 당일 전화 확인</span></p></div>
+  </div>
+
+  <div class="stop">
+    <div class="photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Schienenfahrrad.JPG?width=900" alt="" loading="lazy" onerror="this.remove()"><span class="time">11:30 – 12:30</span><span class="cap">해상 레일 위를 달린다 (참고 이미지)</span></div>
+    <div class="body"><span class="tag leisure">LEISURE</span><h3>대천 스카이바이크</h3><p>국내 최초 해상 스카이바이크. 대천항까지 2.3km 왕복이고 수동 구간과 전동 구간이 섞여 있습니다. 짚트랙이 순간이라면 이건 풍경을 천천히 보는 코스.</p><div class="addr"><b>대천해수욕장 스카이바이크 승강장</b>오전 10:00~13:00 (마지막 탑승 12:00) · 월요일 휴무</div><p class="fee">2인 22,000원 · 4인 30,000원<span>5명이면 2인차 + 3인차로 나눠 탑승</span></p></div>
+  </div>
+
+  <div class="stop">
+    <div class="photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Korean_cuisine-Saengseon_hoe-02.jpg?width=900" alt="" loading="lazy" onerror="this.remove()"><span class="time">12:45 – 14:00</span><span class="cap">서해 제철 회 (참고 이미지)</span></div>
+    <div class="body"><span class="tag food">FOOD</span><h3>대천항 수산시장 · 회 + 매운탕</h3><p>1층에서 직접 고르고 2층 식당에서 상차림. 10월 말이면 대하와 갑오징어가 제철입니다. 오후 운전이 있으니 반주는 딱 한 잔.</p><div class="addr"><b>충남 보령시 대천항로 334</b>1층 활어 70여 상점 · 2층 식당 10곳</div></div>
+  </div>
+
+  <div class="stop">
+    <div class="photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Hyangwonjeong_Pavilion.jpg?width=900" alt="" loading="lazy" onerror="this.remove()"><span class="time">14:30 – 16:30</span><span class="cap">전통 정원과 회랑 (참고 이미지)</span></div>
+    <div class="body"><span class="tag nature">NATURE</span><h3>죽도 상화원</h3><p>섬 하나가 통째로 정원입니다. 2km 회랑을 따라 33개 연못과 서해 바다를 번갈아 봅니다. 금·토·일만 열어서 토요일인 오늘이 기회.</p><div class="addr"><b>충남 보령시 남포면 남포방조제로 408-52</b>4~11월 금·토·일 개방 · 09:00~18:00 (입장 17:00 마감)</div><p class="fee">1인 7,000원<span>현장 발권 · 사전예약 없음</span></p></div>
+  </div>
+
+  <div class="stop">
+    <div class="photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sunset_over_an_ocean_(Corp2739).jpg?width=900" alt="" loading="lazy" onerror="this.remove()"><span class="time">17:00 – 18:30</span><span class="cap">서해 노을 (참고 이미지)</span></div>
+    <div class="body"><span class="tag nature">NATURE</span><h3>해변 산책 · 조각공원 · 노을</h3><p>3.5km 백사장을 걷다가 조각공원에서 쉽니다. 서해라 해가 바다로 떨어지는 걸 볼 수 있습니다. 10월 말 일몰은 17:40 전후. 단체 사진은 이때.</p><div class="addr"><b>대천해수욕장 조각공원</b>무료 · 바람 부니 겉옷 필수</div></div>
+  </div>
+
+  <div class="stop">
+    <div class="photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Jogae-gui_3.jpg?width=900" alt="" loading="lazy" onerror="this.remove()"><span class="time">19:00 –</span><span class="cap">조개구이 무한리필 (참고 이미지)</span></div>
+    <div class="body"><span class="tag food">FOOD</span><h3>조개구이 무한리필 · 대천횟집</h3><p>대천 밤의 정석. 조개 무한리필에 회와 삼겹살까지 따라 나오고, 산낙지·멍게·개불이 기본으로 깔립니다. 5명이 앉기 넉넉한 집.</p><div class="addr"><b>충남 보령시 해수욕장4길 56</b>해수욕장 바로 앞 · 단체석 있음</div><p class="fee"><span>주말 저녁은 대기가 생기니 오후에 전화로 인원 알려두기</span></p></div>
+  </div>
+
+  <div class="stop">
+    <div class="photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Korean_barbecue-Samgyeopsal-08.jpg?width=900" alt="" loading="lazy" onerror="this.remove()"><span class="time">21:30 –</span><span class="cap">2차는 숙소 데크에서 (참고 이미지)</span></div>
+    <div class="body"><span class="tag stay">STAY</span><h3>대천 오션뷰 펜션 · 바베큐 데크</h3><p>5명이 한 지붕 아래. 파도 소리 들리는 데크에서 숯불 하나 피우고 남은 이야기. 밤이 깊으면 라면 끓이고, 그 다음은 각자 알아서.</p><div class="addr"><b>대천해수욕장 도보권 독채 펜션</b>바베큐장 · 주차 · 2주 전 예약 필수</div></div>
   </div>
 </section>
 
-<section class="white pad" style="padding-top:20px">
-  <span class="kicker">Words</span>
-  <h2>오늘을 위한 한 줄</h2>
-  <div class="say">좋은 동료는 우연히 만나지만, 좋은 인연은 저녁 한 끼에서 시작된다.<small>그래서 오늘 자리를 만들었습니다.</small></div>
-  <div class="say">소주 한 병이면 직급이 사라지고, 두 병이면 부서가 사라진다.<small>세 병째는 대리운전이 사라지니 거기까지.</small></div>
-  <div class="say">회사에서 만났지만, 회사 밖에서 더 오래 갈 사람.<small>김정중 담당님께 드리는 말.</small></div>
-</section>
-
-<div class="banner center" style="min-height:440px">
-  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Korean_barbecue-Samgyeopsal-08.jpg?width=1200" alt="" loading="lazy" onerror="this.remove()">
+<div class="banner center">
+  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Korea-Boreyong-Daecheon_Beach-06.jpg?width=1000" alt="" loading="lazy" onerror="this.remove()">
   <div class="in">
-    <div class="k">SEE YOU AT 18:30</div>
-    <h3 class="serif">백석푸르지오 앞에서<br>기다리겠습니다.</h3>
-    <p>담당님 차는 집에, 오늘 밤은 제 차에. 돌아가는 길은 대리운전이 책임집니다.</p>
+    <div class="k">FOR SANI</div>
+    <h3 class="serif">사니는 가고 싶어도<br>못 가는 곳, 대천.</h3>
+    <div class="bubble">"음... 나도 대천 데꼬가라..."</div>
+    <p>모임은 나갔어도 마음은 못 나갔다는 사니. 노을 앞에서 사진 한 장 찍어 보내줄게.</p>
+  </div>
+</div>
+
+<div class="ad-wrap">
+  <div class="lbl">광고</div>
+  <a class="ad" href="#" onclick="return false">
+    <div class="badge"><i></i>광고 ⓘ</div>
+    <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Stacking_the_shelves_in_Smyths_Toys,_Enfield.jpg?width=800" alt="" loading="lazy" onerror="this.remove()"><span class="tag">오늘 마감</span></div>
+    <div class="body"><div><h5>안산 장난감 폐업 창고 개방</h5><p>레고 · 피규어 · RC카 · 보드게임 박스째 처분 · 현금가 추가 할인</p><small>안산시 단원구 · 오전 10시 오픈</small></div><span class="cta">위치 보기</span></div>
+  </a>
+</div>
+
+<section id="day2" class="pad white">
+  <div class="day-head">
+    <span class="badge">DAY 2 · 10/25 일</span>
+    <h2>아침 바다, 그리고 마지막 한 끼</h2>
+    <p>해변 산책 → 해장 → 수산시장 → 칼국수 → 14:00 해산</p>
+  </div>
+
+  <div class="stop">
+    <div class="photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Daecheon_Beach_-_panoramio.jpg?width=900" alt="" loading="lazy" onerror="this.remove()"><span class="time">08:30 – 09:15</span><span class="cap">아침의 대천 백사장</span></div>
+    <div class="body"><span class="tag nature">NATURE</span><h3>아침 해변 산책</h3><p>서해는 일출이 바다에서 뜨지 않으니 욕심 내지 말고 늦게 일어납니다. 대신 사람 없는 아침 백사장을 맨발로 걷습니다. 어젯밤 정리에 이만한 게 없습니다.</p><div class="addr"><b>펜션 앞 해변</b>물때에 따라 갯벌이 넓게 드러남</div></div>
+  </div>
+
+  <div class="stop">
+    <div class="photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Korean_soup-Maeuntang-01.jpg?width=900" alt="" loading="lazy" onerror="this.remove()"><span class="time">09:30 – 10:40</span><span class="cap">해장은 국물로 (참고 이미지)</span></div>
+    <div class="body"><span class="tag food">FOOD</span><h3>해장 · 우럭젓국</h3><p>보령 향토음식. 말린 우럭에 새우젓으로 간을 한 맑은 국인데, 서해 사람들이 해장에 먹는 진짜입니다. 체크아웃하고 시내 식당으로 이동.</p><div class="addr"><b>대천해수욕장 · 대천항 일대</b>가게마다 조리법이 달라 두 곳 검색해두고 가기</div></div>
+  </div>
+
+  <div class="stop">
+    <div class="photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Korean.food-Hoe-02.jpg?width=900" alt="" loading="lazy" onerror="this.remove()"><span class="time">11:00 – 12:20</span><span class="cap">집에 가져갈 것들 (참고 이미지)</span></div>
+    <div class="body"><span class="tag food">MARKET</span><h3>대천항 수산시장 · 선물 포장</h3><p>집에 있는 가족들 눈치용. 10월 말이면 대하·갑오징어·새조개, 그리고 건어물과 젓갈. 아이스박스 하나씩 차에 넣어둡니다.</p><div class="addr"><b>충남 보령시 대천항로 334</b>활어 포장 가능 · 일요일도 영업</div></div>
+  </div>
+
+  <div class="stop">
+    <div class="photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Jogae-gui_4.jpg?width=900" alt="" loading="lazy" onerror="this.remove()"><span class="time">12:30 – 13:45</span><span class="cap">서해의 마지막 한 그릇 (참고 이미지)</span></div>
+    <div class="body"><span class="tag food">FOOD</span><h3>마무리 점심 · 바지락칼국수</h3><p>서해 바지락으로 낸 국물에 칼국수. 술 없이 먹는 마지막 한 끼라 제일 기억에 남습니다. 운전자 둘은 여기서 커피 한 잔 더.</p><div class="addr"><b>대천해수욕장 주변</b>주말 낮 대기 있음</div></div>
+  </div>
+
+  <div class="stop">
+    <div class="photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Korea-Boryeong-Daecheon_Beach-01.jpg?width=900" alt="" loading="lazy" onerror="this.remove()"><span class="time">14:00</span><span class="cap">다음엔 무창포까지</span></div>
+    <div class="body"><span class="tag move">END</span><h3>대천해수욕장 주차장 해산</h3><p>익산 도착 예상 15:30, 아산 15:40. 안성열은 천안아산역에서 KTX로 여수까지 2시간 20분. 짚트랙 영상과 단체 사진은 단톡방에 당일 공유. 다음 모임지 투표는 고속도로 위에서.</p><div class="addr"><b>집결지와 동일</b>사니한테 사진 보내는 것 잊지 않기</div></div>
+  </div>
+</section>
+
+<div class="banner">
+  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sunset_over_an_ocean_(Corp2739).jpg?width=1000" alt="" loading="lazy" onerror="this.remove()">
+  <div class="in">
+    <div class="k">FRIENDSHIP</div>
+    <h3 class="serif">좋은 친구는 별과 같다.<br>항상 보이지 않아도<br>늘 그 자리에 있다.</h3>
+    <p>스무 살엔 밤새 놀았고, 지금은 밤새 이야기한다.</p>
+  </div>
+</div>
+
+<div class="ad-wrap white">
+  <div class="lbl">광고</div>
+  <a class="ad" href="#" onclick="return false">
+    <div class="badge"><i></i>광고 ⓘ</div>
+    <div class="img"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pile_of_lego_blocks.jpg?width=800" alt="" loading="lazy" onerror="this.remove()"><span class="tag">최대 90%</span></div>
+    <div class="body"><div><h5>안산 장난감 폐업 마지막 3일</h5><p>아빠들 주목. 아이 선물 이 가격 다시 없음 · 주차 무료</p><small>광고 · 안산 장난감 폐업매장</small></div><span class="cta">전화하기</span></div>
+  </a>
+</div>
+
+<section class="pad" style="padding-top:20px">
+  <span class="kicker">Words for us</span>
+  <h2>친구에게</h2>
+  <div class="say">함께 걸으면 먼 길도 짧다.<small>익산에서 105km, 아산에서 115km, 여수에서 260km. 그래도 짧다.</small></div>
+  <div class="say">바다는 매년 그대로인데, 같이 보는 사람이 있어야 다른 바다가 된다.<small>그래서 혼자 안 온다.</small></div>
+  <div class="say">우정은 나이를 먹지 않는다.<br>다만 무릎이 먹을 뿐.<small>짚트랙 타기 전에 스트레칭은 하자.</small></div>
+  <div class="say">오래된 친구는 오래된 술 같다. 마실수록 진하고, 다음 날 아침이 좀 힘들다.<small>우럭젓국이 있는 이유.</small></div>
+  <div class="say">개인은 개인끼리, 가족은 가족끼리. 하지만 우리는, 친구는 친구끼리.<small>이 모임의 이름.</small></div>
+</section>
+
+<section id="tips" class="white pad" style="padding-top:20px">
+  <span class="kicker">Checklist</span>
+  <h2>떠나기 전에</h2>
+  <p class="lead">10월 말 서해는 바람이 셉니다. 체감온도가 시내보다 5도 낮다고 보면 됩니다.</p>
+  <div class="card"><div class="ic">🎒</div><h4>챙길 것</h4><ul><li>바람막이 · 경량 패딩 (해변은 훨씬 춥습니다)</li><li>운동화 (상화원 회랑 2km, 백사장 산책)</li><li>모자 · 선글라스 (가을 햇빛도 셉니다)</li><li>상비약 · 파스 · 숙취해소제</li><li>보조배터리 · 액션캠 (짚트랙용)</li><li>아이스박스 (수산시장 포장용)</li></ul></div>
+  <div class="card"><div class="ic">📞</div><h4>예약 · 담당</h4><ul><li>펜션 – 2주 전 (10월 주말은 빨리 찹니다)</li><li>짚트랙 · 스카이바이크 – 당일 오전 운영 확인 전화</li><li>안성열 – 여수엑스포 → 천안아산 KTX 왕복 예매</li><li>조개구이 – 토요일 오후에 인원 전화</li><li>운전 – 익산 방동혁, 아산 양수길</li></ul></div>
+  <div class="card"><div class="ic">🤝</div><h4>단합대회 규칙</h4><ul><li>운전자는 낮 반주 금지, 저녁은 자유</li><li>지각자는 첫날 저녁 술값</li><li>짚트랙 순서는 가위바위보</li><li>회사 얘기는 서해 바다에 버리고 오기</li><li>사니한테 사진 한 장은 꼭 보내기</li></ul></div>
+</section>
+
+<div class="banner center" style="min-height:520px">
+  <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Daecheon_Beach_-_panoramio.jpg?width=1200" alt="" loading="lazy" onerror="this.remove()">
+  <div class="in">
+    <div class="k">SEE YOU IN DAECHEON</div>
+    <h3 class="serif">스물넷의 우리는<br>시간이 많았고,<br>지금의 우리는<br>서로가 있다.</h3>
+    <p>10월 24일 토요일 10시, 대천해수욕장 주차장에서 만납니다.</p>
   </div>
 </div>
 
 <footer>
-  <p>거리와 소요시간은 도로명 번호 기준 추정치입니다. 방문 전 영업 여부를 전화로 확인하세요.</p>
-  <p>사진: Wikimedia Commons (CC BY-SA) 참고 이미지이며 실제 매장 사진이 아닙니다.</p>
+  <p>본 일정과 요금은 2026년 기준 예상치이며, 운영 시간·요금·기상 상황에 따라 변경될 수 있습니다. 거리와 소요시간은 지도 앱 통상치입니다.</p>
+  <p>사진: Wikimedia Commons (CC BY-SA). 짚트랙·스카이바이크·상화원·음식·장난감 일부는 참고 이미지이며 실제 시설 사진이 아닙니다. 광고 박스는 친구들끼리의 장난이며 실제 광고가 아닙니다.</p>
 </footer>
 
 </div>
+
+<audio id="bgm" loop autoplay preload="auto">
+  <source src="https://incompetech.com/music/royalty-free/mp3-royaltyfree/Heart%20of%20Nowhere.mp3" type="audio/mpeg">
+  <source src="https://commons.wikimedia.org/wiki/Special:FilePath/Heart_of_Nowhere_(MacLeod,_Kevin)_(ISRC_USUAN1400045).oga" type="audio/ogg">
+</audio>
+<div class="bgm-hint" id="bgmHint">♪ 화면을 움직이면 음악이 흐릅니다</div>
+<button class="bgm" id="bgmBtn" type="button"><span class="disc"></span><span id="bgmTxt">BGM</span></button>
 <script>
 (function(){
-  var KEY='bs-dinner-0910';
-  var state={pick:null,name:null,hw:null};
-  try{ var s=JSON.parse(localStorage.getItem(KEY)||'null'); if(s) state=s; }catch(e){}
-  var rests=document.querySelectorAll('.rest'), hwBtns=document.querySelectorAll('.yn button');
-  var rPick=document.getElementById('rPick'), rHw=document.getElementById('rHw'), sendBtn=document.getElementById('sendBtn'), sentMsg=document.getElementById('sentMsg');
+  var audio=document.getElementById('bgm'),btn=document.getElementById('bgmBtn'),txt=document.getElementById('bgmTxt'),hint=document.getElementById('bgmHint');
+  var playing=false,synth=null,useSynth=false;
+  audio.volume=0.45;
 
-  function save(){ try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){} }
-  function render(){
-    rests.forEach(function(r){ var on=r.dataset.id===state.pick; r.classList.toggle('picked',on); r.querySelector('.pick').textContent=on?'✓ 여기로 결정!':'이 집으로 갈게요'; });
-    hwBtns.forEach(function(b){ b.classList.toggle('on',b.dataset.hw===state.hw); });
-    rPick.textContent=state.name?(state.pick+'번 · '+state.name):'아직 안 골랐어요';
-    rHw.textContent=state.hw==='ok'?'오케이, 같이 가요':state.hw==='no'?'오늘은 둘이서':'미정';
-    var ready=!!state.pick&&!!state.hw;
-    sendBtn.disabled=!ready;
-    sentMsg.textContent=ready?'버튼을 누르면 카카오톡 공유창이 열립니다. 양수길을 골라 보내주세요.':'식당과 동행 여부를 고르면 버튼이 켜집니다.';
+  /* 음원을 못 불러올 때 쓰는 대체 음악: 잔잔한 코드 패드 */
+  function makeSynth(){
+    var AC=window.AudioContext||window.webkitAudioContext; if(!AC) return null;
+    var ctx=new AC(),master=ctx.createGain(); master.gain.value=0; master.connect(ctx.destination);
+    var chords=[[261.6,329.6,392.0,523.3],[220.0,261.6,329.6,440.0],[174.6,220.0,261.6,349.2],[196.0,246.9,293.7,392.0]];
+    var i=0,timer=null,voices=[];
+    function step(){
+      voices.forEach(function(v){v.g.gain.setTargetAtTime(0,ctx.currentTime,0.6);setTimeout(function(){try{v.o.stop()}catch(e){}},2500)});
+      voices=[];
+      chords[i%chords.length].forEach(function(f,k){
+        var o=ctx.createOscillator(),g=ctx.createGain();
+        o.type=k===3?'triangle':'sine'; o.frequency.value=f; g.gain.value=0;
+        o.connect(g); g.connect(master); o.start();
+        g.gain.setTargetAtTime(k===3?0.05:0.09,ctx.currentTime+0.05,0.8);
+        voices.push({o:o,g:g});
+      });
+      i++;
+    }
+    return {
+      start:function(){ if(ctx.state==='suspended') ctx.resume(); master.gain.setTargetAtTime(0.5,ctx.currentTime,0.5); step(); timer=setInterval(step,4000); },
+      stop:function(){ master.gain.setTargetAtTime(0,ctx.currentTime,0.3); clearInterval(timer); }
+    };
   }
-  rests.forEach(function(r){ r.querySelector('.pick').addEventListener('click',function(){ state.pick=r.dataset.id; state.name=r.dataset.name; save(); render(); document.getElementById('decide').scrollIntoView({behavior:'smooth'}); }); });
-  hwBtns.forEach(function(b){ b.addEventListener('click',function(){ state.hw=b.dataset.hw; save(); render(); }); });
 
-  sendBtn.addEventListener('click',function(){
-    var text='[오늘 저녁 · 백석동] 김정중 담당 선택\n식당: '+state.pick+'번 '+state.name+'\n황인우 동행: '+(state.hw==='ok'?'오케이, 같이 가요':'오늘은 둘이서')+'\n18:30 백석푸르지오 앞에서 봐요.';
-    if(navigator.share){
-      navigator.share({title:'오늘 저녁 선택',text:text}).then(function(){ sentMsg.textContent='보냈습니다. 18:30에 뵙겠습니다!'; }).catch(function(){ copy(text); });
-    } else { copy(text); }
-  });
-  function copy(text){
-    var done=function(){ sentMsg.textContent='메시지를 복사했습니다. 카카오톡에서 양수길에게 붙여넣기 해주세요.'; };
-    if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(text).then(done).catch(function(){ prompt('아래 내용을 복사해서 양수길에게 보내주세요',text); }); }
-    else { prompt('아래 내용을 복사해서 양수길에게 보내주세요',text); }
+  function setUI(on){ playing=on; btn.classList.toggle('on',on); txt.textContent=on?'ON':'OFF'; hint.classList.add('hide'); }
+
+  var wanted=false,fallbackTimer=null;
+  function fallback(){ if(useSynth) return; useSynth=true; try{audio.pause()}catch(e){} if(wanted){ synth=synth||makeSynth(); if(synth){synth.start();setUI(true);} } }
+  function start(){
+    wanted=true;
+    if(useSynth){ synth=synth||makeSynth(); if(synth){synth.start();setUI(true);} return; }
+    var p=audio.play();
+    if(p&&p.then){
+      p.then(function(){ if(!useSynth){ setUI(true); clearTimeout(fallbackTimer); } })
+       .catch(function(err){
+         if(err&&err.name==='NotAllowedError'){ wanted=false; return; } /* 브라우저가 자동재생 차단 → 첫 조작 때 다시 시도 */
+         fallback();
+       });
+      clearTimeout(fallbackTimer); fallbackTimer=setTimeout(function(){ if(wanted&&!playing) fallback(); },6000);
+    } else { setUI(true); }
   }
-  render();
+  function stop(){ wanted=false; clearTimeout(fallbackTimer); if(useSynth&&synth) synth.stop(); else audio.pause(); setUI(false); }
+  audio.addEventListener('error',fallback,true);
+  audio.addEventListener('stalled',function(){ if(audio.networkState===3) fallback(); });
+
+  btn.addEventListener('click',function(e){ e.stopPropagation(); playing?stop():start(); });
+
+  /* 1) 페이지가 열리자마자 시도 (허용되는 브라우저에서는 바로 재생) */
+  var userOff=false;
+  btn.addEventListener('click',function(){ userOff=!playing; });
+  start();
+  /* 2) 차단되면 스크롤·터치·클릭 등 어떤 조작이든 처음 감지되는 순간 재생 */
+  var evs=['touchstart','touchend','pointerdown','scroll','keydown','click','wheel'];
+  function onAny(){ if(playing||userOff){ off(); return; } start(); }
+  function off(){ evs.forEach(function(e){ document.removeEventListener(e,onAny,true); window.removeEventListener(e,onAny,true); }); }
+  evs.forEach(function(e){ document.addEventListener(e,onAny,{capture:true,passive:true}); window.addEventListener(e,onAny,{capture:true,passive:true}); });
+  audio.addEventListener('playing',off);
+  setTimeout(function(){hint.classList.add('hide')},6000);
 })();
 </script>
 </body>
